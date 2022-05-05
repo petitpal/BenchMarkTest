@@ -1,0 +1,99 @@
+// Validating benchmarks:
+Assembly BenchMarkTest which defines benchmarks is non-optimized
+Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+If you want to debug the benchmarks, please see https://benchmarkdotnet.org/articles/guides/troubleshooting.html#debugging-benchmarks.
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\git\petitpal\BenchMarkTest\bin\Debug\net6.0\6e379bee-1936-4ebf-b17f-554308ff7885
+// command took 1.94s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\git\petitpal\BenchMarkTest\bin\Debug\net6.0\6e379bee-1936-4ebf-b17f-554308ff7885
+// command took 4.41s and exited with 0
+// ***** Done, took 00:00:06 (6.48 sec)   *****
+// Found 2 benchmarks:
+//   Sleeps.Countto100: DefaultJob
+//   Sleeps.CountTo10000: DefaultJob
+
+// **************************
+// Benchmark: Sleeps.Countto100: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "6e379bee-1936-4ebf-b17f-554308ff7885.dll" --benchmarkName "Sleeps.Countto100" --job "Default" --benchmarkId 0 in C:\git\petitpal\BenchMarkTest\bin\Debug\net6.0\6e379bee-1936-4ebf-b17f-554308ff7885\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.0 (6.0.21.52210), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 198800.00 ns, 198.8000 us/op
+WorkloadJitting  1: 1 op, 1605620200.00 ns, 1.6056 s/op
+
+WorkloadWarmup   1: 1 op, 1623421100.00 ns, 1.6234 s/op
+WorkloadWarmup   2: 1 op, 1633870200.00 ns, 1.6339 s/op
+WorkloadWarmup   3: 1 op, 1670647000.00 ns, 1.6706 s/op
+WorkloadWarmup   4: 1 op, 1662789500.00 ns, 1.6628 s/op
+WorkloadWarmup   5: 1 op, 1669147300.00 ns, 1.6691 s/op
+WorkloadWarmup   6: 1 op, 1670403900.00 ns, 1.6704 s/op
+WorkloadWarmup   7: 1 op, 1700409500.00 ns, 1.7004 s/op
+WorkloadWarmup   8: 1 op, 1641140100.00 ns, 1.6411 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1619332600.00 ns, 1.6193 s/op
+WorkloadActual   2: 1 op, 1681181900.00 ns, 1.6812 s/op
+WorkloadActual   3: 1 op, 1607699300.00 ns, 1.6077 s/op
+WorkloadActual   4: 1 op, 1659266900.00 ns, 1.6593 s/op
+WorkloadActual   5: 1 op, 1693362300.00 ns, 1.6934 s/op
+WorkloadActual   6: 1 op, 1721887100.00 ns, 1.7219 s/op
+WorkloadActual   7: 1 op, 1653630600.00 ns, 1.6536 s/op
+WorkloadActual   8: 1 op, 1700557800.00 ns, 1.7006 s/op
+WorkloadActual   9: 1 op, 1669095500.00 ns, 1.6691 s/op
+WorkloadActual  10: 1 op, 1661109600.00 ns, 1.6611 s/op
+WorkloadActual  11: 1 op, 1764612500.00 ns, 1.7646 s/op
+WorkloadActual  12: 1 op, 1663101200.00 ns, 1.6631 s/op
+WorkloadActual  13: 1 op, 1671170300.00 ns, 1.6712 s/op
+WorkloadActual  14: 1 op, 1667628500.00 ns, 1.6676 s/op
+WorkloadActual  15: 1 op, 1684688600.00 ns, 1.6847 s/op
+WorkloadActual  16: 1 op, 1678554000.00 ns, 1.6786 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1619332600.00 ns, 1.6193 s/op
+WorkloadResult   2: 1 op, 1681181900.00 ns, 1.6812 s/op
+WorkloadResult   3: 1 op, 1607699300.00 ns, 1.6077 s/op
+WorkloadResult   4: 1 op, 1659266900.00 ns, 1.6593 s/op
+WorkloadResult   5: 1 op, 1693362300.00 ns, 1.6934 s/op
+WorkloadResult   6: 1 op, 1721887100.00 ns, 1.7219 s/op
+WorkloadResult   7: 1 op, 1653630600.00 ns, 1.6536 s/op
+WorkloadResult   8: 1 op, 1700557800.00 ns, 1.7006 s/op
+WorkloadResult   9: 1 op, 1669095500.00 ns, 1.6691 s/op
+WorkloadResult  10: 1 op, 1661109600.00 ns, 1.6611 s/op
+WorkloadResult  11: 1 op, 1663101200.00 ns, 1.6631 s/op
+WorkloadResult  12: 1 op, 1671170300.00 ns, 1.6712 s/op
+WorkloadResult  13: 1 op, 1667628500.00 ns, 1.6676 s/op
+WorkloadResult  14: 1 op, 1684688600.00 ns, 1.6847 s/op
+WorkloadResult  15: 1 op, 1678554000.00 ns, 1.6786 s/op
+
+// AfterAll
+// Benchmark Process 24000 has exited with code 0.
+
+Mean = 1.669 s, StdErr = 0.007 s (0.44%), N = 15, StdDev = 0.029 s
+Min = 1.608 s, Q1 = 1.660 s, Median = 1.669 s, Q3 = 1.683 s, Max = 1.722 s
+IQR = 0.023 s, LowerFence = 1.626 s, UpperFence = 1.717 s
+ConfidenceInterval = [1.638 s; 1.699 s] (CI 99.9%), Margin = 0.031 s (1.84% of Mean)
+Skewness = -0.43, Kurtosis = 2.89, MValue = 2
+
+// **************************
+// Benchmark: Sleeps.CountTo10000: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "6e379bee-1936-4ebf-b17f-554308ff7885.dll" --benchmarkName "Sleeps.CountTo10000" --job "Default" --benchmarkId 1 in C:\git\petitpal\BenchMarkTest\bin\Debug\net6.0\6e379bee-1936-4ebf-b17f-554308ff7885\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.0 (6.0.21.52210), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 213700.00 ns, 213.7000 us/op
+WorkloadJitting  1: 1 op, 167054854700.00 ns, 167.0549 s/op
+
